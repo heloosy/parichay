@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parichay 2025 - Tech Fest</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #e984b7, #ab6fe8);
+            padding: 50px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 15px rgba(255, 0, 128, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items:center; 
+            background-color: #1a1a1a;
+            padding: 10px;
+        }
+        .nav a {
+            background: linear-gradient(90deg,#8000ff, #ff0080);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        section {
+            background: #ff0080;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(128, 0, 255, 0.3);
+            max-width: 800px;
+        }
+        section:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.7);
+        }
+        h1 {
+            background: linear-gradient(90deg, #ff6302, #ff0080);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            font-family: 'Pixel Operator',monospace;
+            font-weight: bold;
+        }
+        .button {
+            background: linear-gradient(90deg, #ff6302, #ff0080);
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.7);
+        }
+        footer {
+            background: #ff008c;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 600px) {
+            h1 { font-size: 36px; }
+            .nav { flex-direction: row; }
+            section { width: 90%; }
+            .logo{position: absolute; bottom:auto; right: auto; width: unset; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="tjlogo.jpg" alt="College Logo" style="width: 150px; position: absolute; top: 10px;">
+        <img src="aiminds.png" style="position: absolute; bottom:20px; right: 300px; width: 300px;">
+        <h1>PARICHAY 3.0</h1>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjxmbO9KonbaWI8m_sC9EJDeG_-2qZ2arsfyRl2QSvWMl6Rw/viewform?usp=dialog">
+            <button class="button" style="position: absolute; bottom: 10px; right: 10px;">Register Now</button>
+        </a>
+    </header>
+    <div class="nav">
+        <a href="index.html"><button class="button"> HOME </button></a>
+        <a href="about.html"><button class="button"> ABOUT </button></a>
+        <button class="button">EVENTS</button>
+    </div>
+    <section id="about" style="background-color:  #87CEEB;">
+        <h2 style="color: #ff0080;">What is PARICHAY?</h2>
+        <p>Parichay is a TECH FEST organized by the Artificial Intelligence and Machine Learning (AIML) department of
+             T John Institute of Technology. It aims to ignite students' passion for technology.</p>
+    </section>
+    <section id="rounds">
+        <h2 style="color: #87ceeb;">EVENTS </h2>
+        <h3 style="color: #87CEEB;">TREASURE HUNT</h3>
+        <p>Technical questions leading to a final destination.</p>
+        <h3 style="color: #87ceeb;">MOCK INTERVIEW</h3>
+        <p>Participants act as interviewers and interviewees.</p>
+        <h3 style="color:#87ceeb;">GAME DECODE</h3>
+        <P>Debug a game and win it.</P>
+    </section>
+    <section id="prizes" style="background-color:  #87CEEB;">
+        <h2 style="color: #ff0080">Prizes & Certificates</h2>
+        <p>Winners receive exciting rewards.</p>
+    </section>
+    <footer>
+        <p>© 2025 Parichay Tech Fest | Organized by AIML department</p>
+    </footer>
+</body>
+</html>
