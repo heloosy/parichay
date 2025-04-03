@@ -21,8 +21,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
-            position: relative;
+        
         }
         .nav {
             display: flex;
@@ -41,22 +40,22 @@
             font-size: 18px;
             margin-right: 15px;
         }
-        
-        
-        
-        
         section {
             background: #ff0080;
             padding: 10px;
-            margin: 10px;
+            margin: 10px auto;
             border-radius: 10px;
             box-shadow: 0px 0px 15px rgba(128, 0, 255, 0.3);
-            width:100%;
-            flex: 1 1 calc(33.333% - 40px);
+            max-width: 800px;
         }
         section:hover{
             transform: scale(1.1);
             box-shadow: 0 0 20px rgba(255, 0, 128, 0.7);
+        }
+        
+        header {
+            flex-direction: column;
+            position: relative;
         }
         .logo1 {
             width: 250px;
@@ -64,6 +63,10 @@
             position: absolute;
             top: 10px;
         }
+        .logo{ position: absolute; 
+            bottom:20px; 
+            right: 300px;  
+            width: 300px; }
         h1 {
             background: linear-gradient(90deg, #ff6302, #ff0080);
             background-clip: text;
@@ -76,13 +79,20 @@
         }
         h2, h3 {
             font-family: 'Pixel Operator',monospace;
+           
+            
             border-radius: 10px;
             background-clip: text;
+            
         }
         p {
             font-family: 'Pixel Operator',monospace;
             color: black;
-            text-align: justify;
+            align-content: justify;
+           
+        }
+        image {
+            size: 150px;
         }
         .button {
             background: linear-gradient(90deg, #ff6302, #ff0080);
@@ -99,8 +109,10 @@
             transform: scale(1.1);
             box-shadow: 0 0 20px rgba(255, 0, 128, 0.7);
         }
+        
+        
         footer {
-            background:#ff008c;
+            background: #ff008c;
             padding: 10px;
             margin-top: 20px;
             border-radius: 10px;
@@ -128,21 +140,18 @@
             .nav a {
                 margin: 5px 0;
             }
-            section {
-                align-items: center;
-                margin-left: 20px;
-            }
         }
     </style>
 </head>
 <body>
     <header>
         <img src="tjlogo.jpg" alt="College Logo" class="logo1">
-        <img src="aiminds.png" style="position: absolute; bottom:20px; right: 300px; width: 300px;" alt="College Logo" class="logo">
+        <img src="aiminds.png" style="position: absolute; bottom:20px; right: 300px; width: 300px; " alt="College Logo" class="logo">
         <h1 style="margin-top: 50px; letter-spacing: 4px;">PARICHAY 3.0</h1>
-        <a href="https://forms.gle/2bdPKYPKf4gtQNWr7">
+        <a href="https://forms.gle/2bdPKYPKf4gtQNWr7 ">
         <button class="button" style="position: absolute; bottom: 10px; right: 10px;">Register Now</button></a>
-    </header>
+</section>
+</header>
     <div class=".nav">
         <a href="index.html">
         <button class="button" style="color:#f4f0f2; background: #0a0a0a; margin-right: 20px;">HOME</button></a>
@@ -151,62 +160,355 @@
         <a href="index.event.html">
         <button class="button" style="color:#f4f0f2; background: #0a0a0a; margin-left: 60px;">EVENTS</button></a>
     </div>
-    <div class="sections-container">
-        <section style="background: #87ceeb; display: flex; align-items: center; max-width:1000px;margin-left: 15%;">
-            <div style="flex: 1;">
-            <h2>Artificial Intelligence & Machine Learning</h2>
-            <p style="text-align: justify;">Department of Artificial Intelligence & Machine Learning was established at T.John Institute of Technology in the year 2022. The courses are offered under the auspices of VTU and are recognized by Govt. of Karnataka and AICTE, New Delhi. The department seeks to excel as a technology hub processing research and educating students in current technological developments. It is equipped with the state of the art infrastructure and supported by a team of dedicated and qualified staff members. 
-
-                The fast changing scenario in Artificial Intelligence & Machine Learning necessitates the department to actively extend its focus and activities in research and development, consultancy programs and Industry-Institute Interaction. Being a frontrunner in the field of technology, the department envisages to evolve as a center of excellence, at par with any world class technical institute and to adapt itself to the rapid advancements in various specialized fields.</p>
-            </div>
-            
+    <section id="THINK TANK" style="background-color:  #87CEEB;">
+        <h2>THINK TANK(Ideathon)</h2>
+        <ul style="text-align: left;">
+            <li><strong>Event Themes Overview:</strong>
+            <ul>
+            <ol>
+            <li><strong>Healthcare:</strong>
+            <ul>
+                <li>AI-driven diagnostics and predictive healthcare solutions.</li>
+                <li>Telemedicine and remote health monitoring for better accessibility.</li>
+                <li>Mental health and wellness platforms using AI and digital tools.</li>
+                <li>Affordable and technology-driven solutions for inclusive healthcare.</li>
+            </ul>
+            </li>
+            <li><strong>Finance:</strong>
+            <ul>
+                <li>AI-powered tools for smarter budgeting, investing, and fraud detection.</li>
+                <li>Blockchain-based security and decentralized finance (DeFi) innovations.</li>
+                <li>Digital banking and financial literacy platforms for financial inclusion.</li>
+                <li>Sustainable finance solutions promoting ethical and green investments.</li>
+            </ul>
+            </li>
+            <li><strong>Gamification of Cybersecurity:</strong>
+            <ul>
+                <li>Interactive simulations and games to teach cybersecurity best practices.</li>
+                <li>AI-driven security awareness training to detect phishing and online threats.</li>
+                <li>Gamified platforms to encourage safe online behavior and digital hygiene.</li>
+                <li>Cyberattack simulation challenges to improve real-world security skills.</li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            <li><strong>General Instructions:</strong>
+            <ul>
+            <li>Teams should consist of 2 to 4 members. A participant can only be part of one team.</li>
+            <li>Teams are encouraged to have diverse skill sets (e.g., coding, design, business, etc.) to enrich the ideation process.</li>
+            <li>Participants should carry their own laptops.</li>
+            <li>Each team will be given 10 minutes for presentation, and 5 minutes for Q&A. Please ensure that you present within the time limit.</li>
+            <li>Themes are mentioned above, so each team should select one theme and prepare the slides beforehand. Time will not be given to prepare the slides on the event day.</li>
+            <li>Prototypes or working models are encouraged; however, they are not mandatory.</li>
+            <li>Judging criteria will be based on problem statement, innovation, impact, feasibility, and presentation skills.</li>
+            <p style="color: aliceblue;"> For more details contact coordinators: Dimple  ph:96119 97366</p>
+            </ul>
+            </li>
+        </ul> </ol></section>
+        <section>
+        <h2 style="text-align: center;">TREASURE HUNT</h2>
+       
+        <ol style="text-align: left;">
+            <li><strong>Team Formation</strong>
+            <ul>
+            <li>Each team must consist of 4 members.</li>
+            <li>No team member changes are allowed after registration.</li>
+            <li>Each team must have a designated leader for communication purposes.</li>
+            </ul>
+            </li>
+            <li><strong>Game Structure</strong>
+            <ul>
+            <li>The treasure hunt consists of 6 clues leading to the final treasure.</li>
+            <li>Each clue must be solved before proceeding to the next location.</li>
+            <li>Teams must follow the sequence of clues—skipping clues is not allowed.</li>
+            <li>The first team to find the final treasure wins.</li>
+            </ul>
+            </li>
+            <li><strong>Time Limit</strong>
+            <ul>
+            <li>The event will run from 11AM to 2PM.</li>
+            <li>Teams must return to the starting point if they fail to complete within the given time.</li>
+            </ul>
+            </li>
+            <li><strong>Rules During the Hunt</strong>
+            <ul>
+            <li>Teams must not tamper with, remove, or destroy clues meant for others.</li>
+            <li>Use of mobile phones, the internet, or external help is strictly prohibited unless stated otherwise.</li>
+            <li>No splitting up—team members must stay together throughout the hunt.</li>
+            </ul>
+            </li>
+            <li><strong>Conduct & Fair Play</strong>
+            <ul>
+            <li>Any team found cheating, misbehaving, or obstructing other teams will be disqualified immediately.</li>
+            <li>Respect public/private property and follow all local laws.</li>
+            <li>Any disputes will be resolved by the event organizers, and their decision will be final.</li>
+            </ul>
+            </li>
+            <li><strong>Safety Guidelines</strong>
+            <ul>
+            <li>Teams must not engage in any dangerous or illegal activities while searching for clues.</li>
+            <li>Follow event-specific health and safety guidelines.</li>
+            <li>If any team member gets injured, notify event organizers immediately.</li>
+            </ul>
+            </li>
+            <li><strong>Disqualification Criteria</strong>
+            <ul>
+            <li>Skipping clues or taking shortcuts that violate the rules.</li>
+            <li>Tampering with another team's progress.</li>
+            <li>Misbehavior with event staff, other participants, or the public.</li>
+            <li>Using unauthorized assistance or electronic devices .</li>
+            </ul>
+            </li>
+            <li><strong>Prizes & Results</strong>
+            <ul>
+            <li>Prizes will be awarded to the first [Specify number] teams that complete the hunt successfully.</li>
+            <li>If no team completes within the time limit, the team with the most clues solved wins.</li>
+            <li>In case of a tie, the team with the fastest time will be declared the winner.</li>
+            </ul>
+            </li>
+            <li><strong>Organizer's Decision</strong>
+            <ul>
+            <li>The event organizers' decision is final and binding in all matters related to the event.</li>
+            <li>Any rule violation or unfair behavior will result in immediate disqualification.</li>
+            <p>For more details contact coordinators: Ivin  ph:74835 88146</p>
+            </ul>
+            </li>
+        </ol>       
+        </section>  
+        <section style="background-color: #87CEEB;">
+            <h2>MOCK INTERVIEW COMPETITION</h2>
+            <ul style="text-align: left;">
+                <ol>
+                <li><strong>Eligibility</strong>
+                    <ul>
+                        <li>Open to all students of TJIT.</li>
+                        <li>Participants must register before the deadline to be eligible.</li>
+                        <li>Only individual participation is allowed.</li>
+                    </ul>
+                </li>
+                <li><strong>Competition Format</strong>
+                    <ul>
+                        <li><strong>Round 1: Preliminary Round (Screening Round)</strong>
+                            <ul>
+                                <li>Format: A one-on-one mock interview with basic HR and general aptitude questions.</li>
+                                <li>Duration: 5-10 minutes per participant.</li>
+                                <li>Evaluation Areas:
+                                    <ul>
+                                        <li>Confidence & Communication</li>
+                                        <li>Clarity of Thought</li>
+                                        <li>Basic HR and Behavioral Skills</li>
+                                    </ul>
+                                </li>
+                                <li>Shortlisting: Based on performance, top participants will qualify for the Final Round.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Round 2: Final Round (Advanced Interview)</strong>
+                            <ul>
+                                <li>Format: A technical and behavioral interview with industry-relevant questions.</li>
+                                <li>Duration: 15-20 minutes.</li>
+                                <li>Evaluation Areas:
+                                    <ul>
+                                        <li>Technical Knowledge</li>
+                                        <li>Problem-Solving & Logical Thinking</li>
+                                        <li>Stress Handling & Decision-Making</li>
+                                        <li>Professionalism & Overall Impact</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Judging Criteria</strong>
+                    <ul>
+                        <li>Communication Skills (clarity, confidence, articulation).</li>
+                        <li>Technical Knowledge (relevant to their field of study).</li>
+                        <li>Problem-Solving & Decision-Making (handling case scenarios).</li>
+                        <li>Professionalism & Body Language (posture, eye contact, attire).</li>
+                        <li>Response Quality & Adaptability (logical and structured answers).</li>
+                    </ul>
+                </li>
+                <li><strong>General Rules</strong>
+                    <ul>
+                        <li><strong>Punctuality:</strong> Participants must arrive 10 minutes before their scheduled interview slot. Latecomers may be disqualified.</li>
+                        <li><strong>Dress Code:</strong> Formal/Business attire is mandatory.</li>
+                        <li><strong>Prohibited Actions:</strong>
+                            <ul>
+                                <li>Use of mobile phones, cheat sheets, or AI tools during the interview.</li>
+                                <li>Seeking assistance from faculty or peers during the competition.</li>
+                                <li>Any form of misconduct, inappropriate behavior, or disruption will result in disqualification.</li>
+                            </ul>
+                        </li>
+                        <li>The decision of the judges is final and cannot be challenged.</li>
+                        <p>For more details contact coordinators: Sylvia  ph:77362 15631</p>
+                    </ul>
+                </li>
+            </ul>
+        </ol>
         </section>
-        <section style="display: flex; align-items: center; max-width: 1000px;margin-left: 15%;">
-            <div style="flex: 1;">
-            <h2>AI MINDS</h2>
-            <p style="margin-left: 10%;">AI Minds is a dynamic and innovative club under the Artificial Intelligence and Machine Learning (AIML) department of T John Institute of Technology. It serves as a hub for students passionate about AI, machine learning, and data science, providing a collaborative space to learn, research, and develop cutting-edge technologies. Through workshops, hackathons, and expert sessions, AI Minds encourages members to explore real-world applications of AI, enhance their problem-solving skills, and stay ahead in the ever-evolving field of artificial intelligence. The club fosters a culture of creativity, teamwork, and technical excellence, preparing students for careers in AI-driven industries.</p>
-            </div>
-            <img src="aiminds.png" style="margin-left: 10%; width: 20%; height: auto;">
-        </section>
-        <section style="background: #87ceeb; display: flex; align-items: center; max-width: 1000px;margin-left: 15%;">
-            <div style="flex: 1;">
-            <h2>VISION</h2>
-            <p style="text-align: justify;">To enrich students with Artificial Intelligence and Machine Learning skills, fostering a culture of research, innovation, and development, thereby empowering them to efficiently address dynamic and evolving societal challenges.</p>
-            </div>
-            </section>
-            <section style=" display: flex; align-items: center; max-width: 1000px;margin-left: 15%;">
-                <div style="flex: 1;">
-                <h2>MISSION</h2>
-                <ul style="text-align: justify; font-family: 'Pixel Operator', monospace;">
-                    <li>M1. To provide comprehensive education in Artificial Intelligence and Machine Learning, equipping students with the skills and knowledge to excel in their careers and contribute meaningfully to the field.</li>
-                    <li>M2. To foster a culture of research and innovation by encouraging students to engage in cutting-edge projects, publish their findings, and develop novel AI and ML solutions to address complex real-world problems.</li>
-                    <li>M3. To establish strong industry partnerships, enhancing students' practical experience and prepare them for the tech world.</li>
-                    <li>M4. To empower students to apply their AI and ML expertise to drive societal progress and address dynamic challenges in various sectors.</li>
+        <section>
+            <h2> BYTE BOUNTY (Battle of Innovation)⚔</h2>
+            <p> 
+                <ul style="text-align: left;"> <ol>
+                    <li><strong>General Rules</strong>
+                        <ul>
+                            <li>Team Composition: Each team must consist of 2-4 members. No individual participation is allowed.</li>
+                            <li>Eligibility: Open to all engineering students. Participants must register their teams before the deadline.</li>
+                            <li>Punctuality: Teams must report 15 minutes before the scheduled start time of each round. Late arrivals will be disqualified.</li>
+                            <li>Fair Play: Any form of cheating, plagiarism, or external assistance will result in immediate disqualification.</li>
+                            <li>Respect & Conduct: Participants must maintain professional conduct. Any misconduct, arguments with judges, or disruption will lead to penalty points or disqualification.</li>
+                            <li>Decision Authority: Judges' decisions are final and binding in all rounds. No appeals will be entertained.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Round 1: The Problem Statement Challenge</strong>
+                        <ul>
+                            <li><strong>Objective:</strong> Identify and propose a real-world tech problem.</li>
+                            <li>Rules:
+                                <ul>
+                                    <li>Teams will be given 8 minutes to brainstorm and select their problem statement.</li>
+                                    <li>The problem must be related to AI, cybersecurity, sustainability, robotics, or emerging technology.</li>
+                                    <li>Each team will get 2 minutes to present their problem to the judges.</li>
+                                    <li>The presentation must include:
+                                        <ul>
+                                            <li>Clear problem definition</li>
+                                            <li>Why it is important?</li>
+                                            <li>Potential impact</li>
+                                        </ul>
+                                    </li>
+                                    <li>Use of pre-prepared material is NOT allowed. Teams must come up with their ideas on the spot.</li>
+                                    <li>Judges will evaluate based on relevance, clarity, uniqueness, and impact.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Outcome:</strong> Top teams will proceed to Round 2.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Round 2: The Catapult Engineering Challenge</strong>
+                        <ul>
+                            <li><strong>Objective:</strong> Build a functional catapult using given materials and test its efficiency.</li>
+                            <li>Rules:
+                                <ul>
+                                    <li>Teams will receive the following materials:
+                                        <ul>
+                                            <li>Ice cream sticks</li>
+                                            <li>Rubber bands</li>
+                                        </ul>
+                                    </li>
+                                    <li>No additional materials can be used.</li>
+                                    <li>Build Time: Each team will have 15 minutes to construct their catapult.</li>
+                                    <li>Testing Phase: Each team gets 3 attempts to launch a small object.</li>
+                                    <li>The launch will be measured based on distance and accuracy to the target.</li>
+                                    <li>Scoring criteria:
+                                        <ul>
+                                            <li>Distance (longest valid launch counts)</li>
+                                            <li>Accuracy (closest to target gets more points)</li>
+                                            <li>Stability & creativity of the design</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Outcome:</strong> Best-performing teams will move to the Final Round.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Final Round: The Ultimate Tech Debate</strong>
+                        <ul>
+                            <li><strong>Objective:</strong> Teams debate a randomly assigned tech topic with a randomly assigned stance (FOR or AGAINST).</li>
+                            <li>Rules:
+                                <ul>
+                                    <li>Topic Assignment: Each team will receive a surprise debate topic related to emerging technologies, ethics, or future innovations.</li>
+                                    <li>Stance Assignment: Teams will be randomly assigned either FOR or AGAINST the topic. They cannot change their stance.</li>
+                                    <li>Preparation Time: Teams get 5 minutes to prepare their arguments.</li>
+                                    <li>Debate Structure:
+                                        <ul>
+                                            <li>Opening Argument: 2 minutes per team</li>
+                                            <li>Rebuttal Round: 1 minute per team</li>
+                                            <li>Final Statement: 30 seconds per team</li>
+                                        </ul>
+                                    </li>
+                                    <li>Judging Criteria:
+                                        <ul>
+                                            <li>Strength of arguments</li>
+                                            <li>Technical accuracy</li>
+                                            <li>Persuasiveness and clarity</li>
+                                        </ul>
+                                    </li>
+                                    <li>No personal attacks or offensive remarks – violations will result in immediate disqualification.</li>
+                                    <li>Audience members must remain silent during the debate. Disruptions will lead to penalties for the respective team.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Outcome:</strong> The team with the highest score wins the title of 'BYTE BOUNTY (Battle of Innovation)⚔️'!</li>
+                            <p>For more details contact coordinators: Prathibha   ph: 93804 45152</p>
+                        </ul>
+                    </li></ol>
                 </ul>
-                </section>
-    </div>
-    <div class="section">
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-            <section style="max-width: 550px; width: 350px; margin: 20px;">
-            <h2>OUR HOD</h2>
-            <img src="hod.jpg" style="width: 30%; height: auto;">
-            <p>Dr. Asha S. Manek, B.E, M.E, Ph.D., is a Professor & HOD in the Department of AI & ML at T John Institute of Technology, Bengaluru, with 28 years of teaching experience. She holds a BE from Nagpur University, an ME from Bangalore University, and a PhD from JNT University, Hyderabad. She has published 45+ research papers in reputed journals, including Scopus, SCI, IEEE Access, and Springer, and has received multiple awards, including the Best Paper Award at ICECMSN-2021. Her research interests include Data Mining, Machine Learning, Web Mining, IoT, Cloud Computing, and Wireless Sensor Networks. She has guided 45+ UG & PG projects, authored a book on C programming, published four patents, two copyrights, and organized numerous conferences and workshops. She has served as a reviewer, judge, resource person, and advisory committee member in national and international events and received recognition as a Primary Evaluator for Toycathon 2021 by MIC AICTE, India. She is a lifetime member of ISTE and has previously been a member of IEEE and CSI.</p>
-            </section>
-            <section style="background: #87ceeb; max-width: 550px; width: 350px; margin: 20px;">
-            <h2>ORGANIZER</h2>
-            <img src="madhavimam.jpeg" alt="Madhavi Mam" style="width: 30%; height:auto;">
-            <p style="text-align: justify; font-size: medium;">Mrs. Madhavi Ravindra Dixit, B.E, M.E, is an Asst. Professor dedicated to leveraging a dynamic teaching approach, encouraging innovative ideas, and training young minds to meet industrial requirements. She holds an M.Tech in Information Technology from VTU, Karnataka, and a B.E. in Electronics Engineering from Shivaji University, Solapur, Maharashtra. With a total of 8 years of experience (5 years in teaching and 3 years in the industry), her areas of interest include Data Science, AI, and ML. She has expertise in subjects like C-Programming, Object-Oriented Programming, Operating Systems, Software Testing, and Digital Electronics. Additionally, she has completed a Software Testing course at Cegonsoft Technologies.</p>
-            </section>
-        </div>
-        <a href="https://forms.gle/2bdPKYPKf4gtQNWr7">
-            <button class="scroll-button" style="position: fixed; bottom: 20px; right: 20px;">Register Now</button></a>
-        
-    
-    <footer>
-        <p style="text-align: center;">© 2025 Parichay Tech Fest | Organized by AIML department</p>
-    </footer>
-        
-        
-    
-</body>
-</html>
+        </section>
+        <section style="background-color: #87CEEB;">
+            <h2>GAME DEBUGGING </h2>
+            <ul style="text-align: left;"><ol>
+                <li><strong>General Guidelines</strong>
+                    <ul>
+                        <li>Participants must identify and fix bugs in the provided game code within the given time frame.</li>
+                        <li>The debugging challenge may include:
+                            <ul>
+                                <li>Logic errors</li>
+                                <li>Syntax errors</li>
+                                <li>Performance issues</li>
+                                <li>Gameplay glitches</li>
+                            </ul>
+                        </li>
+                        <li>All participants must use the designated development environment and tools provided by the organizers.</li>
+                    </ul>
+                </li>
+                <li><strong>Eligibility & Participation</strong>
+                    <ul>
+                        <li>The event is open to individuals or teams (as specified by the organizers).</li>
+                        <li>Participants should have prior knowledge of game development and debugging techniques.</li>
+                        <li>Any external assistance, including AI tools (if restricted), must be approved by the organizers.</li>
+                    </ul>
+                </li>
+                <li><strong>Debugging Process</strong>
+                    <ul>
+                        <li>Participants will receive buggy game code at the start of the challenge.</li>
+                        <li>They must analyze the errors and provide:
+                            <ul>
+                                <li>Corrected code</li>
+                                <li>Explanation of their fixes</li>
+                            </ul>
+                        </li>
+                        <li>Debugging should be performed efficiently without altering intended game mechanics (unless specified).</li>
+                        <li>The use of print/debugging statements is allowed but must be removed before final submission.</li>
+                    </ul>
+                </li>
+                <li><strong>Tools & Resources</strong>
+                    <ul>
+                        <li>Only permitted programming languages and game engines (e.g., Unity, Unreal, Godot) can be used.</li>
+                        <li>Internet access may be restricted, depending on event rules.</li>
+                        <li>Documentation and reference materials may be allowed (check with organizers).</li>
+                    </ul>
+                </li>
+                <li><strong>Evaluation Criteria</strong>
+                    <ul>
+                        <li>Bug Fixing Accuracy – Successfully resolving the given issues.</li>
+                        <li>Code Efficiency – Writing optimized and clean code.</li>
+                        <li>Game Functionality – Ensuring the game works as intended without introducing new bugs.</li>
+                        <li>Explanation & Documentation – Providing clear reasoning for each fix.</li>
+                        <li>Time Management – Completing debugging within the allocated time.</li>
+                    </ul>
+                </li>
+                <li><strong>Disqualification Criteria</strong>
+                    <ul>
+                        <li>Submitting plagiarized or pre-debugged solutions.</li>
+                        <li>Making unauthorized modifications to game mechanics (unless specified).</li>
+                        <li>Using prohibited external tools or assistance.</li>
+                        <li>Violating event decorum or engaging in unfair practices.</li>
+                    </ul>
+                </li>
+                <li><strong>Submission & Judging</strong>
+                    <ul>
+                        <li>All solutions must be submitted before the deadline.</li>
+                        <li>Judges will review submissions based on the evaluation criteria.</li>
+                        <li>The decision of the judges will be final and binding.</li>
+                        <p>For more details contact coordinators: Ryan   ph: 94951 90543</p>
+                    </ul>
+                </li></ol>
+
+            </ul>
+        </section>
